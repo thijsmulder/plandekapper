@@ -1,10 +1,10 @@
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
 import { NavUser } from '@/components/nav-user';
-import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
+import { SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, List, ChartNoAxesGantt, Users, Clock, Contact, File } from 'lucide-react';
+import { BookOpen, ChartNoAxesGantt, Clock, Contact, File, Folder, LayoutGrid, List, Sidebar, Users } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -20,7 +20,7 @@ const planningNavItems: NavItem[] = [
         title: 'Tijdlijn',
         href: '/tijdlijn',
         icon: ChartNoAxesGantt,
-    }
+    },
 ];
 
 const servicesNavItems: NavItem[] = [
@@ -28,7 +28,7 @@ const servicesNavItems: NavItem[] = [
         title: 'Behandelingen',
         href: '/behandelingen',
         icon: List,
-    }
+    },
 ];
 
 const manageNavItems: NavItem[] = [
@@ -46,7 +46,7 @@ const manageNavItems: NavItem[] = [
         title: 'Klanten',
         href: '/klanten',
         icon: Contact,
-    }
+    },
 ];
 
 const reportNavItems: NavItem[] = [
@@ -54,7 +54,7 @@ const reportNavItems: NavItem[] = [
         title: 'Rapporten',
         href: '/rapporten',
         icon: File,
-    }
+    },
 ];
 
 const footerNavItems: NavItem[] = [
